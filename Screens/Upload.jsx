@@ -36,7 +36,7 @@ const Upload = () => {
         name: 'image.jpg',
       });
 
-      const response = await axios.post('http://192.168.1.194:6000/recommendation', formData, {
+      const response = await axios.post('http://Your Flask Server/recommendation', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
